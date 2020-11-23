@@ -1,0 +1,16 @@
+{% block content %}
+  <h1>Registration Form</h1>  
+  <form action="submit/" method="POST" width="100%">
+      {% csrf_token %}
+
+    
+     <div class="form-group">Enter Name :<input type='text' name="name"></div>
+     <div class="form-group">Enter Father's Name:<input type='text' class="form-control" name="fname"></div>
+     <div class="form-group">Enter Mother's Name:<input type='text' class="form-control" name="mname"></div>  
+     <div class="form-group">Enter DOB:<input type='text' class="form-control" name="dob"></div>
+    <div class="form-group"><input type="submit"></div>
+    
+    
+    
+</form>
+{% endblock %}
