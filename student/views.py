@@ -3,6 +3,7 @@ from django.http import HttpResponse
 def index(request):
     return render(request,'regform.html')
 
+# For Testing
 def studentRegistration(request):
     name = request.POST.get('name', '')
     fname = request.POST.get('fname', '')
