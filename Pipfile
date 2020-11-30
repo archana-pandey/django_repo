@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+asgiref = "==3.2.7"
+certifi = "==2020.6.20"
+chardet = "==3.0.4"
+colorama = "==0.4.3"
+djangorestframework = "==3.11.1"
+httpie = "==2.2.0"
+idna = "==2.10"
+pytz = "==2019.3"
+requests = "==2.24.0"
+sqlparse = "==0.3.1"
+urllib3 = "==1.25.10"
+xmltodict = "==0.12.0"
+Django = "==3.0.5"
+Pillow = "==7.2.0"
+Pygments = "==2.6.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.5"
