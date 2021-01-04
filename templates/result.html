@@ -1,5 +1,9 @@
-{% block content %}
-    <h1>submitted</h1>
+
+
+{% extends 'base.html' %}
+{% block title %} Home page {% endblock %}
+{% block body %}
+<h1>submitted</h1>
     {% for key, value in result.items %}
         <h1>{{value}}</h1>        
     {% endfor %}

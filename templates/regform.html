@@ -1,16 +1,32 @@
-{% block content %}
-  <h1>Registration Form</h1>  
-  <form action="submit/" method="POST" width="100%">
-      {% csrf_token %}
-
-    
-     <div class="form-group">Enter Name :<input type='text' name="name"></div>
-     <div class="form-group">Enter Father's Name:<input type='text' class="form-control" name="fname"></div>
-     <div class="form-group">Enter Mother's Name:<input type='text' class="form-control" name="mname"></div>  
-     <div class="form-group">Enter DOB:<input type='text' class="form-control" name="dob"></div>
+{% extends 'base.html' %}
+{% block body %}
+<h1>Registration Form</h1>
+<div class="container">
+  <form action="" method="POST" width="100%">
+    {% csrf_token %}
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Name" name="name" aria-label="Username"
+        aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Father's Name" name="fname" aria-label="fname"
+        aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Mother's Name" name="mname" aria-label="mname"
+        aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <input type="date" class="form-control" placeholder="D-O-B" name="dob" aria-label="dob"
+        aria-describedby="basic-addon1" min="1990-01-01" max="2018-12-31">
+    </div>
     <div class="form-group"><input type="submit"></div>
-    
-    
-    
+</div>
+
+<!-- <div class="form-group">Enter Name :<input type='text' name="name"></div>
+  <div class="form-group">Enter Father's Name:<input type='text' class="form-control" name="fname"></div>
+  <div class="form-group">Enter Mother's Name:<input type='text' class="form-control" name="mname"></div>
+  <div class="form-group">Enter DOB:<input type='text' class="form-control" name="dob"></div>
+  <div class="form-group"><input type="submit"></div> -->
 </form>
 {% endblock %}
