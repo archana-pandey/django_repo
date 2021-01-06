@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'school', # example - blog_data
         'USER': 'root',
         'PASSWORD': 'Fedora@2020',
-        'HOST': 'localhost',
+        'HOST': '35.232.133.39',
         'PORT': '3306',
     }
 }
