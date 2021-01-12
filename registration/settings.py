@@ -75,22 +75,22 @@ WSGI_APPLICATION = 'registration.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'HOST': '35.232.133.39',
-#         'NAME': 'school', # example - blog_data
-#         'USER': 'root',
-#         'PASSWORD': 'Fedora@2020',        
-#         'PORT': '3306',
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '35.232.133.39',
+        'NAME': 'school', # example - blog_data
+        'USER': 'root',
+        'PASSWORD': 'Fedora@2020',        
+        'PORT': '3306',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 AUTH_PASSWORD_VALIDATORS = [
     {
